@@ -31,8 +31,8 @@
         [backBtn setTitle:NSLocalizedString(@"返回", nil) forState:UIControlStateNormal];
         [backBtn setImage:[UIImage imageNamed:@"navigationButtonReturn"] forState:UIControlStateNormal];
         [backBtn setImage:[UIImage imageNamed:@"navigationButtonReturnClick"] forState:UIControlStateHighlighted];
-        [backBtn setTitleColor:LMFRGBA(120, 120, 120, 1.0) forState:UIControlStateNormal];
-        [backBtn setTitleColor:LMFRGB(255, 59,48) forState:UIControlStateHighlighted];
+        [backBtn setTitleColor:LMFRGBAColor(120, 120, 120, 1.0) forState:UIControlStateNormal];
+        [backBtn setTitleColor:LMFRGBColor(255, 59,48) forState:UIControlStateHighlighted];
         backBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         [backBtn addTarget:self action:@selector(popSelf) forControlEvents:UIControlEventTouchUpInside];
         backBtn.bounds = CGRectMake(0, 0, 100, 30);

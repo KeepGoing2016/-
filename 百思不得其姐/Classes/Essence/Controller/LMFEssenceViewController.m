@@ -9,21 +9,22 @@
 #import "LMFEssenceViewController.h"
 
 @implementation LMFEssenceViewController
--(instancetype)init{
-    if (self=[super init]) {
-        self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
-    }
-    return self;
-}
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    self.view.backgroundColor = LMFRandomColor;
+    self.view.backgroundColor = LMFGlobalBg;
+    self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    UIBarButtonItem *leftBarButtonItem = [UIBarButtonItem itemWithImage:@"MainTagSubIcon" selectImage:@"MainTagSubIconClick" target:self method:NSSelectorFromString(@"clickLeftBarButtonItem")];
+    self.navigationItem.leftBarButtonItem = leftBarButtonItem;
+}
+
+-(void)clickLeftBarButtonItem{
+    LMFFunction;
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     UIViewController *newController = [[UIViewController alloc]init];
-    newController.view.backgroundColor = LMFRandomColor;
+    newController.view.backgroundColor = LMFGlobalBg;
     newController.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:newController animated:YES];
 }
