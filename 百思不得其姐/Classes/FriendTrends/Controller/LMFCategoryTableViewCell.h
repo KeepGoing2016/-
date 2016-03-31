@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LMFRecommendCategoryModel.h"
 
 @interface LMFCategoryTableViewCell : UITableViewCell
-
+@property (nonatomic, strong) LMFRecommendCategoryModel *categoryModel;
 @end

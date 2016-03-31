@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LMFRecommendController">
             <connections>
                 <outlet property="categoryTable" destination="mja-l8-yzf" id="Oxx-nJ-fsG"/>
+                <outlet property="followTable" destination="XKO-sA-8ee" id="YVV-WY-7z4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,23 +17,35 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mja-l8-yzf">
-                    <rect key="frame" x="0.0" y="0.0" width="80" height="600"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mja-l8-yzf">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="80" id="uZP-rp-jXP"/>
+                        <constraint firstAttribute="width" constant="70" id="uZP-rp-jXP"/>
                     </constraints>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="dJp-U6-Jzd"/>
                         <outlet property="delegate" destination="-1" id="Ym5-dT-MKO"/>
                     </connections>
                 </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XKO-sA-8ee">
+                    <rect key="frame" x="70" y="0.0" width="530" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="vKX-dv-Uuk"/>
+                        <outlet property="delegate" destination="-1" id="NDn-gK-B7U"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="mja-l8-yzf" secondAttribute="bottom" id="Mat-oK-cOs"/>
+                <constraint firstItem="XKO-sA-8ee" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="TCO-21-zP3"/>
                 <constraint firstItem="mja-l8-yzf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WhQ-XT-Eyb"/>
                 <constraint firstItem="mja-l8-yzf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jwd-U7-nSp"/>
+                <constraint firstItem="XKO-sA-8ee" firstAttribute="leading" secondItem="mja-l8-yzf" secondAttribute="trailing" id="mSY-pJ-A0i"/>
+                <constraint firstAttribute="bottom" secondItem="XKO-sA-8ee" secondAttribute="bottom" id="pWq-ey-MIW"/>
+                <constraint firstAttribute="trailing" secondItem="XKO-sA-8ee" secondAttribute="trailing" id="yP9-32-C98"/>
             </constraints>
         </view>
     </objects>

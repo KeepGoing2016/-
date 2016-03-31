@@ -27,6 +27,11 @@
 		3BA0A8ED1CABCF22001699C2 /* LMFRecommendController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BA0A8EB1CABCF22001699C2 /* LMFRecommendController.xib */; };
 		3BA0A8F11CABD215001699C2 /* LMFCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA0A8EF1CABD215001699C2 /* LMFCategoryTableViewCell.m */; };
 		3BA0A8F21CABD215001699C2 /* LMFCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BA0A8F01CABD215001699C2 /* LMFCategoryTableViewCell.xib */; };
+		3BDF1F101CACC7910023D6F1 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF1F0F1CACC7910023D6F1 /* Foundation+Log.m */; };
+		3BDF1F131CACC80E0023D6F1 /* LMFRecommendCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF1F121CACC80E0023D6F1 /* LMFRecommendCategoryModel.m */; };
+		3BDF1F171CACD4420023D6F1 /* LMFFollowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF1F151CACD4420023D6F1 /* LMFFollowTableViewCell.m */; };
+		3BDF1F181CACD4420023D6F1 /* LMFFollowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BDF1F161CACD4420023D6F1 /* LMFFollowTableViewCell.xib */; };
+		3BDF1F1B1CACF4900023D6F1 /* LMFFollowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF1F1A1CACF4900023D6F1 /* LMFFollowModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +91,14 @@
 		3BA0A8EE1CABD215001699C2 /* LMFCategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LMFCategoryTableViewCell.h; path = ../Controller/LMFCategoryTableViewCell.h; sourceTree = "<group>"; };
 		3BA0A8EF1CABD215001699C2 /* LMFCategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LMFCategoryTableViewCell.m; path = ../Controller/LMFCategoryTableViewCell.m; sourceTree = "<group>"; };
 		3BA0A8F01CABD215001699C2 /* LMFCategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LMFCategoryTableViewCell.xib; path = ../Controller/LMFCategoryTableViewCell.xib; sourceTree = "<group>"; };
+		3BDF1F0F1CACC7910023D6F1 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		3BDF1F111CACC80E0023D6F1 /* LMFRecommendCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMFRecommendCategoryModel.h; sourceTree = "<group>"; };
+		3BDF1F121CACC80E0023D6F1 /* LMFRecommendCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMFRecommendCategoryModel.m; sourceTree = "<group>"; };
+		3BDF1F141CACD4420023D6F1 /* LMFFollowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMFFollowTableViewCell.h; sourceTree = "<group>"; };
+		3BDF1F151CACD4420023D6F1 /* LMFFollowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMFFollowTableViewCell.m; sourceTree = "<group>"; };
+		3BDF1F161CACD4420023D6F1 /* LMFFollowTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LMFFollowTableViewCell.xib; sourceTree = "<group>"; };
+		3BDF1F191CACF4900023D6F1 /* LMFFollowModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMFFollowModel.h; sourceTree = "<group>"; };
+		3BDF1F1A1CACF4900023D6F1 /* LMFFollowModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMFFollowModel.m; sourceTree = "<group>"; };
 		65CD6BDEE549ED119CA56425 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FCDFC561DBE9097E8EAC04A0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -142,8 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				3BA0A8AF1CABB29A001699C2 /* Classes */,
-				3B1B8AF41CA90F38004D5919 /* Assets.xcassets */,
-				3B1B8AF91CA90F38004D5919 /* Info.plist */,
 				3B1B8AE81CA90F38004D5919 /* Supporting Files */,
 			);
 			path = "百思不得其姐";
@@ -152,6 +163,8 @@
 		3B1B8AE81CA90F38004D5919 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3B1B8AF41CA90F38004D5919 /* Assets.xcassets */,
+				3B1B8AF91CA90F38004D5919 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -245,6 +258,10 @@
 		3BA0A8BA1CABB29A001699C2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3BDF1F111CACC80E0023D6F1 /* LMFRecommendCategoryModel.h */,
+				3BDF1F121CACC80E0023D6F1 /* LMFRecommendCategoryModel.m */,
+				3BDF1F191CACF4900023D6F1 /* LMFFollowModel.h */,
+				3BDF1F1A1CACF4900023D6F1 /* LMFFollowModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -255,6 +272,9 @@
 				3BA0A8EE1CABD215001699C2 /* LMFCategoryTableViewCell.h */,
 				3BA0A8EF1CABD215001699C2 /* LMFCategoryTableViewCell.m */,
 				3BA0A8F01CABD215001699C2 /* LMFCategoryTableViewCell.xib */,
+				3BDF1F141CACD4420023D6F1 /* LMFFollowTableViewCell.h */,
+				3BDF1F151CACD4420023D6F1 /* LMFFollowTableViewCell.m */,
+				3BDF1F161CACD4420023D6F1 /* LMFFollowTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -333,6 +353,7 @@
 				3BA0A8D51CABB29A001699C2 /* View */,
 				3BA0A8C91CABB29A001699C2 /* AppDelegate.h */,
 				3BA0A8CA1CABB29A001699C2 /* AppDelegate.m */,
+				3BDF1F0F1CACC7910023D6F1 /* Foundation+Log.m */,
 				3BA0A8D31CABB29A001699C2 /* LMFPrefixHeader.pch */,
 				3BA0A8D41CABB29A001699C2 /* main.m */,
 			);
@@ -499,6 +520,7 @@
 				3BA0A8E81CABBCE9001699C2 /* LMFFriendTrendsViewController.xib in Resources */,
 				3BA0A8F21CABD215001699C2 /* LMFCategoryTableViewCell.xib in Resources */,
 				3B1B8AF51CA90F38004D5919 /* Assets.xcassets in Resources */,
+				3BDF1F181CACD4420023D6F1 /* LMFFollowTableViewCell.xib in Resources */,
 				3BA0A8ED1CABCF22001699C2 /* LMFRecommendController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,12 +594,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BDF1F131CACC80E0023D6F1 /* LMFRecommendCategoryModel.m in Sources */,
 				3BA0A8EC1CABCF22001699C2 /* LMFRecommendController.m in Sources */,
+				3BDF1F1B1CACF4900023D6F1 /* LMFFollowModel.m in Sources */,
+				3BDF1F101CACC7910023D6F1 /* Foundation+Log.m in Sources */,
 				3BA0A8D91CABB29A001699C2 /* LMFFriendTrendsViewController.m in Sources */,
 				3BA0A8DB1CABB29A001699C2 /* LMFNewViewController.m in Sources */,
 				3BA0A8D81CABB29A001699C2 /* LMFEssenceViewController.m in Sources */,
 				3BA0A8F11CABD215001699C2 /* LMFCategoryTableViewCell.m in Sources */,
 				3BA0A8E11CABB29A001699C2 /* LMFTabBar.m in Sources */,
+				3BDF1F171CACD4420023D6F1 /* LMFFollowTableViewCell.m in Sources */,
 				3BA0A8DE1CABB29A001699C2 /* LMFNavigationController.m in Sources */,
 				3BA0A8DA1CABB29A001699C2 /* LMFMeViewController.m in Sources */,
 				3BA0A8DD1CABB29A001699C2 /* UIBarButtonItem+LMFExtension.m in Sources */,

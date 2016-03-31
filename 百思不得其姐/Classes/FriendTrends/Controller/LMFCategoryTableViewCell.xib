@@ -3,32 +3,54 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="category" id="KGk-i7-Jjw" customClass="LMFCategoryTableViewCell">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="category" id="KGk-i7-Jjw" customClass="LMFCategoryTableViewCell">
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xak-6D-Fmb">
-                        <rect key="frame" x="8" y="33" width="304" height="2"/>
+                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Utu-mO-riz" userLabel="SeperatorView">
+                        <rect key="frame" x="0.0" y="42" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="UUT-sz-kye"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ltd-BA-0by" userLabel="LeftView">
+                        <rect key="frame" x="0.0" y="0.0" width="3" height="43"/>
                         <color key="backgroundColor" red="0.81491315360000005" green="0.20325852999999999" blue="0.2234951201" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="2" id="BjX-tU-Zum"/>
+                            <constraint firstAttribute="width" constant="3" id="Ziy-Ef-c7f"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Xak-6D-Fmb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="TGN-pg-eKw"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="Xak-6D-Fmb" secondAttribute="trailing" id="aCs-GI-dTl"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="Xak-6D-Fmb" secondAttribute="bottom" id="sBK-3B-xhw"/>
+                    <constraint firstAttribute="trailing" secondItem="Utu-mO-riz" secondAttribute="trailing" id="DJG-sn-vrw"/>
+                    <constraint firstItem="Utu-mO-riz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Kvw-cW-Br3"/>
+                    <constraint firstItem="Ltd-BA-0by" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="P9h-SH-wXu"/>
+                    <constraint firstAttribute="bottom" secondItem="Ltd-BA-0by" secondAttribute="bottom" id="SjY-dd-vlv"/>
+                    <constraint firstItem="Ltd-BA-0by" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VGJ-PU-nhK"/>
+                    <constraint firstItem="Utu-mO-riz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="aPG-gB-luW"/>
+                    <constraint firstAttribute="trailing" secondItem="Utu-mO-riz" secondAttribute="trailing" id="bVg-AK-fCk"/>
+                    <constraint firstAttribute="bottom" secondItem="Utu-mO-riz" secondAttribute="bottom" id="cHB-0K-NON"/>
+                    <constraint firstAttribute="bottom" secondItem="Utu-mO-riz" secondAttribute="bottom" id="qY5-ci-cCf"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Kvw-cW-Br3"/>
+                        <exclude reference="bVg-AK-fCk"/>
+                        <exclude reference="qY5-ci-cCf"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="leftRedView" destination="Ltd-BA-0by" id="1d9-dD-loL"/>
+            </connections>
             <point key="canvasLocation" x="293" y="185"/>
         </tableViewCell>
     </objects>
